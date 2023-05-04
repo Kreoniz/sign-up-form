@@ -18,6 +18,8 @@ body {
     display: flex;
 }
 
+/* Styling the banner part */
+
 .banner {
     flex: 0 0 40%;
     background: url("img/banner_jellyfish.jpg") center/cover;
@@ -41,7 +43,7 @@ body {
     font-family: SuperBubble;
     font-size: 3rem;
 
-    margin: 180px 0 0;
+    margin-top: 180px;
 }
 
 .logo img {
@@ -55,4 +57,27 @@ body {
 
 .attribution a {
     color: inherit;
+}
+
+/* Styling the content part */
+
+.content {
+    max-width: 680px;
+    margin: 150px 2.5rem 0;
+
+}
+
+.info p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+/* Adding margin-bottom to all paragraphs except the last one */
+.info p:not(.info p:last-child) {
+    margin-bottom: 1rem;
+}
+
+.info p em {
+    font-style: italic;
 }
