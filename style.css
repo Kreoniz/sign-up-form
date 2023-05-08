@@ -59,7 +59,7 @@ body {
 
 .attribution {
     text-align: center;
-    margin: 0 0 10px;
+    margin: 10px 0;
 }
 
 .attribution a {
@@ -199,4 +199,43 @@ body {
 
 .login a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 750px) {
+    body {
+        flex-direction: column;
+    }
+
+    .content {
+        padding-bottom: 2rem;
+    }
+
+    .banner {
+        flex: 1 1 40%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        width: 100px;
+    }
 }
